@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- TITLE -->
+        <title>COVID19 - MAROC</title>
+        <!-- META -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- STYLE -->
+        <link rel="stylesheet" href="Assets/css/style.css">
+        <!-- CSS BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+            <a class="navbar-brand" href="#"><img src="Assets/images/logo.png" style="height: 60px; width: 120px;"> </a>
+        </nav>
+
+        <!-- TITLE -->
+        <h1 id="title">COVID-19, Aujourd'hui:</h1>
+
+        <!-- HASHTAG -->
+        <div class="hashtag_box">#stay_home</div>
+        <div class="hashtag_box">#stay_safe</div>
+
+        <!-- STATS -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm" style="padding-top: 20px;">
+                     <div class="black">
+                        <p class="p_title1">CONFIRMÉS</p>
+                        <p class="p_stats1">0</p>
+                        <hr>
+                        <p class="p_today1 p_display">Aujourd'hui:</p>
+                        <p class="p_new1 p_display">+0</p>
+                     </div>
+                </div>
+                <div class="col-sm" style="padding-top: 20px;">
+                    <div class="green">
+                        <p class="p_title2">GUÉRIS</p>
+                        <p class="p_stats2">0</p>
+                        <hr>
+                        <p class="p_today2 p_display">Aujourd'hui:</p>
+                        <p class="p_new2 p_display">+0</p>
+                    </div>
+                </div>
+                <div class="col-sm" style="padding-top: 20px;">
+                    <div class="red">
+                        <p class="p_title3">DÉCÈS</p>
+                        <p class="p_stats3">0</p>
+                        <hr>
+                        <p class="p_today3 p_display">Aujourd'hui:</p>
+                        <p class="p_new3 p_display">+0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHART -->
+        <div class="container" style="padding-top: 40px;">
+                    <div class="chart">
+                        <canvas id="axes_line_chart"> </canvas>
+                    </div>
+        </div>
+
+        <!-- THANKS -->
+        <div class="container" style="padding-top: 40px;">
+            <div class="hashtag_box">#thanks</div> 
+            <center>
+                <img src="Assets/images/thanks.png" class="img-fluid" alt="Responsive image" style="height: 50%; width: 50%;">
+            </center>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-copyright text-center py-3 bg-pink" style="color: white;">© 2020 Copyright | Designed & Developed by:
+            <a href="#" style="color: #6A1B9A; font-family: 'Ubuntu', sans-serif;"> RHAFES Mohamed Yassine</a>
+        </div>
+  
+    </body>
+    
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="Assets/js/app.js"> </script>
+    <!-- JAVASCRIPT BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</html>

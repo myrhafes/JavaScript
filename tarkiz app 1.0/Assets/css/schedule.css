@@ -1,0 +1,329 @@
+:root{
+    --mainColor: #14162B;
+    --background: #1A1E36;
+    
+    --fadedText: #36384D;
+    
+    --mainButtons: rgb(241, 48, 78);
+    
+    --colorRed: rgb(241, 48, 78);
+    --colorBlue: rgb(66, 134, 244);
+    --colorGreen: rgb(78, 241, 48);
+    --colorOrange: rgb(255, 186, 48);
+    --colorYellow: rgb(239, 219, 45);
+    --colorPurple: rgb(144, 45, 237);
+    --colorPink: rgb(239, 98, 237);
+    --colorCyan: rgb(44, 232, 185);
+    
+  }
+  
+  body {
+    background: linear-gradient(to right, #396afc, #2948ff);
+    
+    
+  }
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    background: var(--mainColor);
+    height: 490px;
+    width: 800px; 
+  /*   overflow: scroll; */
+    border-radius: 6px;
+    box-shadow: 0px 0px 47px -1px rgba(0,0,0,0.75);
+    /*   centering a fixed element in the middle of screen */
+    margin: -245px -400px;
+    top: 50%;
+    left: 50%;
+    
+  }
+  
+  .topHeader {
+    
+    color: white;
+    background: var(--mainColor);
+    height: 80px;
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    z-index: 30;
+    box-shadow: 0px 10px 28px -11px rgba(0,0,0,0.35);
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-weight: 100;
+    
+  }
+  
+  .topHeader, th { 
+    font-size: 15px;
+  }
+  
+  .tableHeader th {
+    color: rgba(255,255,255,0.6);
+    font-weight: 200;
+  }
+  
+  table {
+    width: 100%;
+    border-spacing: 0px;
+  }
+  td, th {
+    width: 100px;
+  }
+  td {
+    height: 12px;
+    border-left: 1px solid rgba(120,120,255,0.5);
+    
+  }
+  .time {
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+    text-align: center;
+    font-weight: 100;
+    
+  }
+  
+  tr:nth-child(2n) {
+    background: rgba(120,120,255,0.06);
+  }
+  
+  .myClass {
+    background-color: var(--mainButtons);
+    width: 100px;
+    height: 30px;
+  /* !important needed so on resize it doesnt come back to relative   */
+    position: absolute !important;
+    cursor: -webkit-grab; cursor:-moz-grab;
+    z-index: 10;
+    border-radius: 3px;
+  }
+  
+  .myClass p {
+    margin: 6px 6px;
+  }
+  .fa-trash-o {
+    cursor: pointer; 
+    float: right;
+    transition: 300ms;
+  }
+  .fa-trash-o:hover {
+    color: rgba(0,0,0,0.5);
+    transition: 300ms;
+  } 
+  .myClass:active {
+    cursor: -webkit-grabbing; cursor:-moz-grabbing;
+    opacity: 0.7;
+  }
+  
+  tr {
+    height: 10px;
+  }
+  
+  .title {
+    margin: 0px 0px;
+    text-align: center;
+  }
+  
+  .topHeader button {
+   float: right; 
+   margin-right: 15px;
+  }
+  
+  
+  button {
+    
+      background-color: var(--mainButtons);
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: 300ms;
+  }
+  
+  button:focus {
+    border: none;
+    outline: none;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    transition: 300ms;
+  }
+  
+  button:active {
+    transform: translateY(4px);
+    background: rgba(201, 48, 78, 1);
+  }
+  
+  .addNew {
+    margin-left: 150px;
+    display: inline;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 100;
+    box-shadow: 0px 10px 47px -6px rgba(0,0,0,0.75);
+  }
+  
+  .addButton {
+    height: 3em;
+    margin: 20px auto;
+    font-weight:200;
+    display: block;
+    font-size: 24px;
+    box-shadow: 0px 10px 47px -6px rgba(0,0,0,0.25);
+  }
+  
+  .triangle {
+    margin: -5px 338px; 
+    background: inherit;
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    z-index: 29;
+  }
+  
+  .popUp {
+    text-align: center;
+    margin: 80px 380px;
+    position: fixed;
+    height: 350px;
+    width: 400px;
+    background: white;
+    z-index: 30;
+    border-radius: 3px;
+    display: none;
+    
+  }
+  
+  input {
+    margin-top: 20px;
+    width: 70%;
+    font-size: 25px;
+    border: 0px solid black;
+    outline: none;
+    font-weight: 700;
+    color: grey;
+    text-align: center;
+    
+  }
+  
+  .nameInput {
+    border-bottom: 5px solid var(--fadedText);
+  }
+  
+  .enterTime {
+    width: 15%;
+  }
+  .popUp {
+    font-size: 20px;
+  }
+  .shake {
+  /*   border-bottom: 5px solid red; */
+    animation-name: alertAnimation;
+    animation-duration: 100ms;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes alertAnimation {
+    0% {}
+    50% {transform: rotate(-3deg);}
+    100% {
+      transform: rotate(3deg);
+      
+    }
+  }
+  
+  .nameInput::-webkit-input-placeholder {
+     text-align: center;
+    color: rgba(0,0,0,0.2);
+  }
+  /* WEEKDAYS  */
+  input[type=checkbox] {
+      margin: 0px 11px;
+  }
+  .checkBox {
+    display:inline-block;
+  }
+  
+  .week div {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* TIME  */
+  .timeBox {
+    font-size: 15px;
+  }
+  .enterTime {
+    width: 48px;
+  }
+  .hour{
+    text-align: right;
+  }
+  .hour::-webkit-input-placeholder {
+     text-align: right;
+  }
+  .halfHour{
+    text-align: left;
+  }
+  .halfHour::-webkit-input-placeholder {
+     text-align: left;
+  } 
+  
+  /* COLOR */
+  .colorPick {  
+    width: 30px;
+    height: 30px;
+    
+  }
+  
+  .colorContainer {
+    margin-top: 20px;
+  }
+  
+  .color {
+    margin: 0px 2px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 50%;
+    transition: 300ms;
+  }
+  
+  .color:hover {
+    
+    transform: scale(1.4, 1.4);
+    transition: 300ms;
+    box-shadow: inset 0px 0px 0px 4px rgba(255,255,255,0.25);
+    
+  }
+  
+  .color:active {
+    transform: scale(1.2, 1.2);
+  }
+  
+  #colorRed {background-color: var(--colorRed)}
+  #colorBlue {background-color: var(--colorBlue)}
+  #colorGreen {background-color: var(--colorGreen)}
+  #colorOrange {background-color: var(--colorOrange)}
+  #colorYellow {background-color: var(--colorYellow)}
+  #colorPurple {background-color: var(--colorPurple)}
+  #colorPink {background-color: var(--colorPink)}
+  #colorCyan {background-color: var(--colorCyan)}
+  
+  
+  
+  
+  @media print {
+  
+  }

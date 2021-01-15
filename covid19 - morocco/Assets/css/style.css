@@ -1,0 +1,171 @@
+/*---- FONTS ----*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/*---- HTML settings ----*/
+html{
+    background-color: #F3F3F3;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*---- NAVBAR ----*/
+.navbar-brand{
+    position: relative;
+    left: 43%;
+}
+.navbar-brand img{
+    width:50px;
+}
+.bg-pink{
+    background-color: #F28888;
+}
+
+/*---- TITLE ----*/
+#title{
+    margin: 30px 0px 5px 10px;
+    font-size: 40px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/*---- HASHTAG ----*/
+.hashtag_box {
+    border-radius: 40px;
+    background-color: #6E78FF;
+    margin: 20px 5px 20px 10px;
+    display: inline-block;
+    height: 35px ;
+    width: 110px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'MuseoModerno', cursive;
+    color: #FFF;
+}
+
+/*---- STATS ----*/
+.black{
+    border: 2px solid #000000;
+    
+}
+.black hr{
+    height: 1px;
+    background-color: #000000;
+    border: none;
+}
+.p_title1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+.p_stats1{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+.p_today1{
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.p_new1{
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.p_display{
+    display: inline-block;
+}
+
+.green{
+    border: 2px solid #6CD46C;  
+}
+.green hr{
+    height: 1px;
+    background-color: #6CD46C;
+    border: none;
+}
+.p_title2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #6CD46C;
+}
+.p_stats2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #6CD46C;
+}
+.p_today2{
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6CD46C;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.p_new2{
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    color: #6CD46C;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.red{
+    border: 2px solid #EE0000;
+}
+.red hr{
+    height: 1px;
+    background-color: #EE0000;
+    border: none;
+}
+.p_title3{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #EE0000;
+}
+.p_stats3{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    color: #EE0000;
+}
+.p_today3{
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    color: #EE0000;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.p_new3{
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    color: #EE0000;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/*---- CHART ----*/
+.chart{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/bg-chart.jpg');
+
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/*---- MOBILE ----*/
+@media screen and (max-width: 600px){
+    .navbar-brand{
+        position: relative;
+        left: 38%;
+    }
+}
+/*---- END CSS ----*/

@@ -1,0 +1,45 @@
+html,
+body{
+  height: 100%;
+}
+#page-content{
+  flex: 1 0 auto;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    color: #6C63FF;
+    text-align: center;
+    font-size: 20px;
+}
+.col-sm{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+    background-color: #6C63FF;
+}
+
+.navbar-brand img{
+    width:180px;
+}
+.navbar-brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10PX;
+}
+.navbar{
+   padding: 2.5em 0 !important; 
+   background-color: #6C63FF;
+}
+
+
